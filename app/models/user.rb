@@ -5,4 +5,11 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable
+
+  ########################################
+  # Relationships
+  has_many :links, dependent: :destroy
+  has_many :active_links, -> { where active: true }, inverse_of: :user, autosave: true,
+           dependent: :destroy, class_name: 'Link'
+  has_many :organisations, through: :active_links
 end
