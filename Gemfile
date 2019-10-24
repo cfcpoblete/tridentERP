@@ -39,6 +39,9 @@ gem 'devise'
 gem 'draper'
 gem 'pundit'
 
+# Active admin theme
+gem "active_material", github: "vigetlabs/active_material"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
