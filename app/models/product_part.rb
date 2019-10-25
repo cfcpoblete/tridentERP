@@ -1,0 +1,2 @@
+class ProductPart < ApplicationRecord
+end
