@@ -40,7 +40,7 @@ gem 'draper'
 gem 'pundit'
 
 # Active admin theme
-gem "active_material", github: "vigetlabs/active_material"
+gem 'arctic_admin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
