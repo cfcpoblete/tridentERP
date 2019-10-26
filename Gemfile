@@ -35,7 +35,7 @@ gem 'activeadmin'
 
 # Plus integrations with:
 gem 'cancancan'
-gem 'devise'
+gem 'devise', '< 4.7.1'
 gem 'draper'
 gem 'pundit'
 
